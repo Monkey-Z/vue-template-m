@@ -2,6 +2,9 @@
 
 > A Vue.js project
 
+## Use
+Vue | Sass | Axios
+
 ## Build Setup
 
 ``` bash

@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/weather': {
+        target: 'https://www.tianqiapi.com',   //代理接口
+        changeOrigin: true,
+        pathRewrite: {
+          '^/weather': '/api'    //代理的路径
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
